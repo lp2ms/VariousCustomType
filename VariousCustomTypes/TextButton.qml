@@ -1,11 +1,12 @@
 import QtQuick 2.12
-import "../Style"
+import QtQuick.Controls 2.12
+import "qrc:/import"
 Button {
     id:control
     font.weight: hovered?Font.Black:Font.Medium
 
 
-    property color textColor:horusTheme.textColor
+    property color textColor:palette.text
     implicitWidth: text.contentWidth+10
     implicitHeight: text.contentHeight+10
     background:Rectangle{

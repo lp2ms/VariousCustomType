@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
-import '../Style'
+import QtQuick.Controls 2.12
+import "qrc:/import"
 Button {
     id:button
    // font.bold: true
@@ -17,7 +18,7 @@ Button {
                 text:button.text
                 font:button.font
 
-                color: horusTheme.textColor
+                color: palette.text
             }
             Text{
                 //font:button.font
@@ -26,7 +27,7 @@ Button {
                 font.pointSize: button.font.pointSize*1.2
                 Layout.alignment: Qt.AlignRight
                 horizontalAlignment: Text.AlignRight
-                color: horusTheme.textColor
+                color: palette.text
             }
         }
 

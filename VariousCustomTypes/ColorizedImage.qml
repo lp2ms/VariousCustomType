@@ -1,6 +1,6 @@
 import QtQuick 2.12
 import QtGraphicalEffects 1.0
-import "../Style"
+import "qrc:/import"
 
 Item{
     id:item

@@ -1,21 +1,21 @@
 import QtQuick 2.12
-import QtQuick.Controls 2.13
+import QtQuick.Controls 2.12
 import QtQuick.Shapes 1.12
-import "../Style"
+import "qrc:/import"
 //import QtGraphicalEffects 1.0
 
 Button {
     id:startButton
-    property int radius: horusTheme.baseRadius
+    property int radius: HorusTheme.baseRadius
     property color color:"transparent"
-    property color textColor:horusTheme.textColor
+    property color textColor:palette.text
 
-    property color strokeColor:hovered?horusTheme.standardGreen:horusTheme.borderColor
-    borderColor: hovered?horusTheme.standardGreen:horusTheme.borderColor
+    property color strokeColor:hovered?HorusTheme.standardGreen:HorusTheme.borderColor
+    //borderColor: hovered?HorusTheme.standardGreen:HorusTheme.borderColor
     property int strokeWidth:2
     topPadding: 8
     bottomPadding:8
-   // strokeColor: enabled?hovered?horusTheme.standardGreen:horusTheme.borderColor:"dimgrey"
+   // strokeColor: enabled?hovered?HorusTheme.standardGreen:HorusTheme.borderColor:"dimgrey"
     //padding:20
     contentItem: Item{
         Item{

@@ -1,11 +1,11 @@
 import QtQuick 2.12
-import "../Style"
+import "qrc:/import"
 Rectangle {
     id:rootItem
-    color:horusTheme.foregroundColor
-    border.color: horusTheme.borderColor
+    color:HorusTheme.foregroundColor
+    border.color: HorusTheme.borderColor
     onEnabledChanged: PropertyAnimation { target: rootItem; property: "height"; duration: 300; to: enabled?implicitHeight:0 }
-    radius: horusTheme.baseRadius
+    radius: HorusTheme.baseRadius
     property int maximumHeight:parent.height
     property int minimumHeight:0
     //    Rectangle{
@@ -44,8 +44,8 @@ Rectangle {
 
             implicitWidth: parent.width
             implicitHeight: parent.height/4
-            color: mouseArea.hovered ? mouseArea.pressed ?Qt.darker(horusTheme.borderColor, 1.1):Qt.darker(horusTheme.borderColor, 1.2)
-            : horusTheme.borderColor
+            color: mouseArea.hovered ? mouseArea.pressed ?Qt.darker(HorusTheme.borderColor, 1.1):Qt.darker(HorusTheme.borderColor, 1.2)
+            : HorusTheme.borderColor
         }
 
             //visible: SplitHandle.hovered ?true:false

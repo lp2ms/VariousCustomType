@@ -1,8 +1,8 @@
 import QtQuick 2.12
-import QtQuick.Controls 2.13
-import "qrc:/Style"
+import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.1
+import "qrc:/import"
 Dialog {
     title:qsTr("Delete selection")
     function validate(){}
@@ -41,7 +41,7 @@ Dialog {
             id:text
             anchors.centerIn: parent
             text:"Are you sure ?"
-            color:horusTheme.standardRed
+            color:HorusTheme.standardRed
             font.pointSize: 12
         }
         CheckBox{

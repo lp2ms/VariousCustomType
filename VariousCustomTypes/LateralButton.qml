@@ -1,11 +1,11 @@
 import QtQuick 2.12
-import QtQuick.Controls 2.13
+import QtQuick.Controls 2.12
 import QtQuick.Shapes 1.12
 import QtGraphicalEffects 1.0
-import "../Style"
+import "qrc:/import"
 IconButton {
     id:tabButton
-    property int radius: horusTheme.baseRadius
+    property int radius: HorusTheme.baseRadius
     property int margin: width/6
     labelVisible: !current
     //property string source
@@ -23,8 +23,8 @@ IconButton {
     color:"transparent"
     leftPadding: current?20:padding
    // topPadding: current?12:padding
-    textColor: horusTheme.backgroundColor
-    iconeColor:current?horusTheme.accentColor:horusTheme.backgroundColor
+    textColor: HorusTheme.backgroundColor
+    iconeColor:current?HorusTheme.accentColor:HorusTheme.backgroundColor
 
 
 //            Colorize {
@@ -51,7 +51,7 @@ IconButton {
         ShapePath{
             startX:tabButton.x+tabButton.width
             startY: 0
-            fillColor: horusTheme.backgroundColor
+            fillColor: HorusTheme.backgroundColor
                     PathArc{
                         //direction: PathArc.Counterclockwise
                         radiusX: tabButton.radius

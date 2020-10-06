@@ -1,5 +1,5 @@
 import QtQuick 2.12
-import "../Style"
+import "qrc:/import"
 Column {
     id:column
     default property alias item: ld.sourceComponent
@@ -8,7 +8,7 @@ Column {
     property int foldHeight: foldButton.height
     property alias foldButton: foldButton
     spacing: 20
-    property int indentation: column.width*horusTheme.baseMarginFactor
+    property int indentation: column.width*HorusTheme.baseMarginFactor
 
     FoldButton{
         id:foldButton

@@ -1,7 +1,7 @@
 import QtQuick 2.12
-import QtQuick.Controls 2.13
+import QtQuick.Controls 2.12
 import QtQuick.Shapes 1.12
-import "../Style"
+import "qrc:/import"
 //import QtGraphicalEffects 1.0
 
 
@@ -19,7 +19,7 @@ AbstractButton{
     property int radius:5
 
     property color color
-    property color textColor:horusTheme.textColor
+    property color textColor:palette.text
 
     property color strokeColor:"transparent"
     property int strokeWidth:0

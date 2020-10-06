@@ -1,6 +1,6 @@
 import QtQuick 2.12
-import QtQuick.Controls 2.13
-import "../Style"
+import QtQuick.Controls 2.12
+import "qrc:/import"
 
 Column{
     id:root
@@ -13,12 +13,12 @@ Column{
     Row{
         Text{
             text:qsTr("Axis: ")
-            color:horusTheme.textColor
+            color:palette.text
             //width:50
         }
         Text{
             text:axis[currentIndex]
-             color:horusTheme.textColor
+             color:palette.text
         }
     }
     AbstractButton{
@@ -42,7 +42,7 @@ Column{
                 y:parent.height/2
                 width: parent.width/2
                 height: button.hovered?2:1
-                color:enabled?horusTheme.accentColor:horusTheme.accentColorDisabled
+                color:enabled?HorusTheme.accentColor:HorusTheme.accentColorDisabled
             }
             Rectangle{
                 visible: root.currentIndex==1?true:false
@@ -50,7 +50,7 @@ Column{
 
                 width: button.hovered?2:1
                 height: parent.height/2
-                color:enabled?horusTheme.accentColor:horusTheme.accentColorDisabled
+                color:enabled?HorusTheme.accentColor:HorusTheme.accentColorDisabled
             }
             Rectangle{
                 visible: root.currentIndex==2?true:false
@@ -59,7 +59,7 @@ Column{
                 width: button.hovered?4:2
                 height: button.hovered?4:2
                 radius:width/2
-                color:enabled?horusTheme.accentColor:horusTheme.accentColorDisabled
+                color:enabled?HorusTheme.accentColor:HorusTheme.accentColorDisabled
 
             }
         }

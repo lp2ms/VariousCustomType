@@ -1,8 +1,8 @@
 import QtQuick 2.12
-import QtQuick.Controls 2.13
-import "../Style"
+import QtQuick.Controls 2.12
 import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.12
+import "qrc:/import"
 Button {
     id:button
    // width: parent.width
@@ -13,7 +13,7 @@ Button {
     property string source
     property string label
     property color color:highlighted?Qt.rgba(0.90,0.90,0.90,1):Qt.rgba(0.1,0.1,0.1,1)
-    property color textColor:enabled?horusTheme.textColor:horusTheme.textLightColor
+    property color textColor:enabled?palette.text:HorusTheme.textLightColor
     property int iconeSize: 25
     property int textSize:8
     property color iconeColor:"transparent"
