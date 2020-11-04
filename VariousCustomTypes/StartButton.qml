@@ -10,12 +10,12 @@ Button {
     property color color:"transparent"
     property color textColor:palette.text
 
-    property color strokeColor:hovered?HorusTheme.standardGreen:HorusTheme.borderColor
-    //borderColor: hovered?HorusTheme.standardGreen:HorusTheme.borderColor
+    property color strokeColor:hovered?HorusTheme.standardGreen:palette.mid
+    //borderColor: hovered?HorusTheme.standardGreen:palette.mid
     property int strokeWidth:2
     topPadding: 8
     bottomPadding:8
-   // strokeColor: enabled?hovered?HorusTheme.standardGreen:HorusTheme.borderColor:"dimgrey"
+   // strokeColor: enabled?hovered?HorusTheme.standardGreen:palette.mid:"dimgrey"
     //padding:20
     contentItem: Item{
         Item{

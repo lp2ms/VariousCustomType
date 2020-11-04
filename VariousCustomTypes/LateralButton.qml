@@ -23,8 +23,8 @@ IconButton {
     color:"transparent"
     leftPadding: current?20:padding
    // topPadding: current?12:padding
-    textColor: HorusTheme.backgroundColor
-    iconeColor:current?HorusTheme.accentColor:HorusTheme.backgroundColor
+    textColor: palette.window
+    iconeColor:current?HorusTheme.accentColor:palette.light
 
 
 //            Colorize {
@@ -51,7 +51,7 @@ IconButton {
         ShapePath{
             startX:tabButton.x+tabButton.width
             startY: 0
-            fillColor: HorusTheme.backgroundColor
+            fillColor: palette.base
                     PathArc{
                         //direction: PathArc.Counterclockwise
                         radiusX: tabButton.radius

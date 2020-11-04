@@ -35,14 +35,14 @@ Column{
             width: 50
             height: 50
             radius: 25
-            color:enabled?"light grey":Qt.lighter("light grey",1.1)
+            color:enabled?palette.shadow:"light grey"
             Rectangle{
                 visible: root.currentIndex==0?true:false
                 x:parent.width/2
                 y:parent.height/2
                 width: parent.width/2
                 height: button.hovered?2:1
-                color:enabled?HorusTheme.accentColor:HorusTheme.accentColorDisabled
+                color:palette.highlightedText
             }
             Rectangle{
                 visible: root.currentIndex==1?true:false
@@ -50,7 +50,7 @@ Column{
 
                 width: button.hovered?2:1
                 height: parent.height/2
-                color:enabled?HorusTheme.accentColor:HorusTheme.accentColorDisabled
+                 color:palette.highlightedText
             }
             Rectangle{
                 visible: root.currentIndex==2?true:false
@@ -59,7 +59,7 @@ Column{
                 width: button.hovered?4:2
                 height: button.hovered?4:2
                 radius:width/2
-                color:enabled?HorusTheme.accentColor:HorusTheme.accentColorDisabled
+                 color:palette.highlightedText
 
             }
         }

@@ -12,5 +12,7 @@
         <file>VariousCustomTypes/TextButton.qml</file>
         <file>VariousCustomTypes/VerticalSizeableItem.qml</file>
         <file>VariousCustomTypes/VerticalyFoldableItem.qml</file>
+        <file>VariousCustomTypes/LinkedNumberInput.qml</file>
+        <file>VariousCustomTypes/LinkedNumberInputColumnGroup.qml</file>
     </qresource>
 </RCC>
