@@ -15,6 +15,7 @@ Button {
     property int strokeWidth:2
     topPadding: 8
     bottomPadding:8
+    leftPadding:8
    // strokeColor: enabled?hovered?HorusTheme.standardGreen:palette.mid:"dimgrey"
     //padding:20
     contentItem: Item{

@@ -5,10 +5,11 @@ import QtQuick.Layouts 1.12
 RowLayout{
     property alias preeditText: xScaleValue.preeditText
     property alias linkIcon: xScaleButton.icon
+    property alias validator: xScaleValue.validator
     property string rootIcon
-    readonly property real value: xScaleValue.text
+    readonly property real value: Number.fromLocaleString(xScaleValue.text)
     function updateValue(value){
-        if(xScaleButton.checked&&Number(xScaleValue.text)!==value){
+        if(xScaleButton.checked&&Number.fromLocaleString(xScaleValue.text)!==value){
             xScaleValue.text=value;
         }
     }
@@ -19,13 +20,13 @@ RowLayout{
         id:xScaleValue
         // property real previousValue:1;
         onTextEdited: {
-            console.log("Value updated !", Number(text))
-            if(xScaleButton.checked){
-                valueUpdated(Number(text))
+            if(xScaleButton.checked && acceptableInput){
+                valueUpdated(Number.fromLocaleString(text))
             }
         }
         text:"1"
         onAccepted: parent.accepted()
+
     }
     Button{
         id:xScaleButton
