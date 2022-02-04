@@ -10,10 +10,10 @@ RowLayout{
     readonly property real value: Number.fromLocaleString(xScaleValue.text)
     function updateValue(value){
         if(xScaleButton.checked&&Number.fromLocaleString(xScaleValue.text)!==value){
-            xScaleValue.text=value;
+            xScaleValue.text=value.toLocaleString();
         }
     }
-    function setValue(value){xScaleValue.text=value;}
+    function setValue(value){xScaleValue.text=value.toLocaleString();}
     signal valueUpdated(real value);
     signal accepted()
     TextField{
